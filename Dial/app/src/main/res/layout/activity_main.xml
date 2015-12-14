@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FF33B5E5"
-        android:text="ACTION_VIEW "
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    <EditText
-        android:id="@+id/txtUriString"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:hint="Enter URI (eg. tel:555-1234 )"
-        android:textSize="18sp" />
-    <Button
-        android:id="@+id/btnCallActivity2"
-        android:layout_width="149dp"
-        android:layout_height="wrap_content"
-        android:text=" Go "
-        android:textStyle="bold"
-        android:background="#9070e7"
 
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call"
         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PhoneNumber"
+        android:inputType="number"
+        />
+
 </LinearLayout>
