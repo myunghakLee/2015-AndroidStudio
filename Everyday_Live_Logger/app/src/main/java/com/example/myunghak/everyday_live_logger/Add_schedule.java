@@ -289,7 +289,7 @@ public class Add_schedule extends AppCompatActivity {
 
     }
 
-    private class Long_click_mList implements AdapterView.OnItemLongClickLi//길게 클릭하면 창을 하나 띄워줌stener {
+    private class Long_click_mList implements AdapterView.OnItemLongClickListener {//
         public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
             final int selectePos = position;
             AlertDialog.Builder alertDlg = new AlertDialog.Builder(view.getContext());
@@ -321,7 +321,7 @@ public class Add_schedule extends AppCompatActivity {
 
                 }
             });
-            alertDlg.setMessage(String.삭제하시겠습니까?삭제되었습니다.", nameList.get(position)));
+            alertDlg.setMessage(String.format(삭제하시겠습니까?삭제되었습니다.", nameList.get(position)));
             alertDlg.show();
             return false;
         }
