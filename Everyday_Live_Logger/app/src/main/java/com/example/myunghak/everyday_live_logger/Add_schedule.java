@@ -321,7 +321,7 @@ public class Add_schedule extends AppCompatActivity {
 
                 }
             });
-            alertDlg.setMessage(String.format(삭제하시겠습니까?삭제되었습니다.", nameList.get(position)));
+            alertDlg.setMessage(String.format("삭제하시겠습니까?", nameList.get(position)));
             alertDlg.show();
             return false;
         }
